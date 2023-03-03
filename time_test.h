@@ -16,7 +16,8 @@ int time_test()
     // For demonstration a loop is ran which goes from 0 to
     // 50000
     for (int i = 0; i < 50000; i++)
-        continue;
+        for(int i =0; i < 10000; i++)
+            continue;
  
     // Taking a timestamp after the code is ran
     auto end = high_resolution_clock::now();
@@ -28,5 +29,20 @@ int time_test()
  
     // Displaying the elapsed time
     std::cout << "Elapsed Time: " << duration.count();
+    return 0;
+}
+int foo(){
+    time_point<system_clock> start, end;
+    start = system_clock::now();
+    int x = 1;
+    while(true){
+        x = x * 2;
+        end = system_clock::now();
+        duration<double> time_passed = end - start;
+        if (time_passed.count() == 10){
+            break;
+        }
+    }
+    std::cout << "start time: ";
     return 0;
 }
