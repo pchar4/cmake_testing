@@ -32,14 +32,13 @@ int time_test()
     return 0;
 }
 int foo(){
-    time_point<system_clock> start, end;
-    start = system_clock::now();
+    time_point<steady_clock> start, end;
+    start = steady_clock::now();
     int x = 1;
     while(true){
         x = x * 2;
-        end = system_clock::now();
-        duration<double> time_passed = end - start;
-        if (time_passed.count() >= 10){
+        end = steady_clock::now();
+        if (duration_cast<seconds>(end-start).count() >= 10){
             break;
         }
     }
