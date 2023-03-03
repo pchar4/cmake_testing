@@ -39,7 +39,7 @@ int foo(){
         x = x * 2;
         end = system_clock::now();
         duration<double> time_passed = end - start;
-        if (time_passed.count() == 10){
+        if (time_passed.count() >= 10){
             break;
         }
     }
