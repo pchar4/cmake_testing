@@ -26,7 +26,7 @@ D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/ContinuousTest.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/ContinuousCoverage.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/ContinuousMemCheck.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/ContinuousSubmit.dir
-D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/cmake_testing.dir
+D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/foo.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/package.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/package_source.dir
 D:/PAC/RENEW_LAB/cmake_testing/build/CMakeFiles/test.dir

@@ -2,10 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "cmake_testing.exe"
+			"path" : "foo.exe"
 		},
 		{
-			"path" : "cmake_testing.pdb"
+			"path" : "foo.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -48,7 +48,7 @@
 			]
 		}
 	],
-	"id" : "cmake_testing::@6890427a1f51a3e7e1df",
+	"id" : "foo::@6890427a1f51a3e7e1df",
 	"link" : 
 	{
 		"commandFragments" : 
@@ -68,8 +68,8 @@
 		],
 		"language" : "CXX"
 	},
-	"name" : "cmake_testing",
-	"nameOnDisk" : "cmake_testing.exe",
+	"name" : "foo",
+	"nameOnDisk" : "foo.exe",
 	"paths" : 
 	{
 		"build" : ".",
@@ -83,6 +83,13 @@
 			[
 				0
 			]
+		},
+		{
+			"name" : "Header Files",
+			"sourceIndexes" : 
+			[
+				1
+			]
 		}
 	],
 	"sources" : 
@@ -90,8 +97,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "main.cpp",
+			"path" : "cmake_test_main.cpp",
 			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"path" : "time_test.h",
+			"sourceGroupIndex" : 1
 		}
 	],
 	"type" : "EXECUTABLE"

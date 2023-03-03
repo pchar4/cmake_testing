@@ -1,7 +1,7 @@
 [
 {
   "directory": "D:/PAC/RENEW_LAB/cmake_testing/build",
-  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\cmake_testing.dir\\main.cpp.obj -c D:\\PAC\\RENEW_LAB\\cmake_testing\\main.cpp",
-  "file": "D:/PAC/RENEW_LAB/cmake_testing/main.cpp"
+  "command": "C:\\msys64\\mingw64\\bin\\g++.exe   -g -o CMakeFiles\\foo.dir\\cmake_test_main.cpp.obj -c D:\\PAC\\RENEW_LAB\\cmake_testing\\cmake_test_main.cpp",
+  "file": "D:/PAC/RENEW_LAB/cmake_testing/cmake_test_main.cpp"
 }
 ]

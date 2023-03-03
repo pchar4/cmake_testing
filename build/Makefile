@@ -510,41 +510,41 @@ ContinuousSubmit/fast:
 .PHONY : ContinuousSubmit/fast
 
 #=============================================================================
-# Target rules for targets named cmake_testing
+# Target rules for targets named foo
 
 # Build rule for target.
-cmake_testing: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 cmake_testing
-.PHONY : cmake_testing
+foo: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 foo
+.PHONY : foo
 
 # fast build rule for target.
-cmake_testing/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cmake_testing.dir\build.make CMakeFiles/cmake_testing.dir/build
-.PHONY : cmake_testing/fast
+foo/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\foo.dir\build.make CMakeFiles/foo.dir/build
+.PHONY : foo/fast
 
-main.obj: main.cpp.obj
-.PHONY : main.obj
+cmake_test_main.obj: cmake_test_main.cpp.obj
+.PHONY : cmake_test_main.obj
 
 # target to build an object file
-main.cpp.obj:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cmake_testing.dir\build.make CMakeFiles/cmake_testing.dir/main.cpp.obj
-.PHONY : main.cpp.obj
+cmake_test_main.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\foo.dir\build.make CMakeFiles/foo.dir/cmake_test_main.cpp.obj
+.PHONY : cmake_test_main.cpp.obj
 
-main.i: main.cpp.i
-.PHONY : main.i
+cmake_test_main.i: cmake_test_main.cpp.i
+.PHONY : cmake_test_main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cmake_testing.dir\build.make CMakeFiles/cmake_testing.dir/main.cpp.i
-.PHONY : main.cpp.i
+cmake_test_main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\foo.dir\build.make CMakeFiles/foo.dir/cmake_test_main.cpp.i
+.PHONY : cmake_test_main.cpp.i
 
-main.s: main.cpp.s
-.PHONY : main.s
+cmake_test_main.s: cmake_test_main.cpp.s
+.PHONY : cmake_test_main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles\cmake_testing.dir\build.make CMakeFiles/cmake_testing.dir/main.cpp.s
-.PHONY : main.cpp.s
+cmake_test_main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\foo.dir\build.make CMakeFiles/foo.dir/cmake_test_main.cpp.s
+.PHONY : cmake_test_main.cpp.s
 
 # Help Target
 help:
@@ -585,10 +585,10 @@ help:
 	@echo ... NightlySubmit
 	@echo ... NightlyTest
 	@echo ... NightlyUpdate
-	@echo ... cmake_testing
-	@echo ... main.obj
-	@echo ... main.i
-	@echo ... main.s
+	@echo ... foo
+	@echo ... cmake_test_main.obj
+	@echo ... cmake_test_main.i
+	@echo ... cmake_test_main.s
 .PHONY : help
 
 
