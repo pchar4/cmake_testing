@@ -38,7 +38,7 @@ int foo(){
     while(true){
         x = x * 2;
         end = steady_clock::now();
-        if (duration_cast<seconds>(end-start).count() >= 10){
+        if (duration_cast<seconds>(end-start).count() >= 20){
             break;
         }
     }
